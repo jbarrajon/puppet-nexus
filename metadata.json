@@ -1,0 +1,22 @@
+{
+  "name": "jbarrajon-nexus",
+  "version": "0.1.1",
+  "author": "Jaime Barrajón",
+  "summary": "Install and manage Sonatype Nexus",
+  "license": "GPL-3.0",
+  "source": "https://github.com/jbarrajon/puppet-nexus",
+  "project_page": "https://github.com/jbarrajon/puppet-nexus",
+  "issues_url": "https://github.com/jbarrajon/puppet-nexus/issues",
+  "dependencies": [
+    { "name": "puppet-archive", "version_requirement": ">= 1.0.0" }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "7"]
+    }
+  ],
+  "requirements": [
+    { "name": "puppet", "version_requirement": ">= 3.8.0" }
+  ]
+}

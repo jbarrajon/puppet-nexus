@@ -1,0 +1,11 @@
+# ==================================
+# Sonatype Nexus - managed by Puppet
+# ==================================
+
+<% @config_options.each do |section,settings| -%>
+# <%= section %>
+<% settings.each do |setting| -%>
+<%= setting %>
+<% end -%>
+
+<% end -%>
