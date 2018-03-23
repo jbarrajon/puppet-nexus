@@ -39,5 +39,6 @@ class nexus::params {
   $service_script   = '/etc/systemd/system/nexus.service'
   $service_template = 'nexus/nexus.systemd.erb'
   $service_options  = {}
+  $nofile_limit     = 65536
 
 }

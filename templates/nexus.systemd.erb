@@ -4,6 +4,7 @@ After=network.target
 
 [Service]
 Type=forking
+LimitNOFILE=<%= scope.lookupvar('::nexus::nofile_limit') %>
 ExecStart=<%= scope.lookupvar('::nexus::user_home') %>/nexus/bin/nexus start
 ExecStop=<%= scope.lookupvar('::nexus::user_home') %>/nexus/bin/nexus stop
 User=<%= scope.lookupvar('::nexus::nexus_user') %>
