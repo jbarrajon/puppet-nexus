@@ -23,6 +23,7 @@ class nexus (
   $service_options       = $::nexus::params::service_options,
   $service_ensure        = $::nexus::params::service_ensure,
   $service_enable        = $::nexus::params::service_enable,
+  $nofile_limit          = $::nexus::params::nofile_limit,
 ) inherits ::nexus::params {
 
   case $version {
